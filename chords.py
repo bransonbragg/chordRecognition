@@ -61,7 +61,7 @@ def main():
 
     train_path = 'trainDat.csv'
     test_path = 'testDat.csv'
-    """
+    
     clf = GDA()
     phi, sigma, mu_1, mu_2, mu_3, mu_4, mu_5, mu_6, mu_7, mu_8, mu_9, mu_10 = clf.fit(x_train, y_train)
 
@@ -78,7 +78,7 @@ def main():
         if predictions[i] == y_test[i]:
             num_cor += 1
     print("Test accuracy is: " + str(num_cor / len(predictions)))
-    """
+    
 
     """
     #with open('trainBran.csv', 'w') as f:
@@ -90,27 +90,6 @@ def main():
     Pass the labels in R as y
     ^^ Format to match prior GDA implementation ^^
     """
-
-
-
-
-    """
-    rb, sr = librosa.load('audio/jim2012Chords/Guitar_Only/a/a1.wav')
-    rap, _ = librosa.load('audio/jim2012Chords/Guitar_Only/a/a2.wav')
-    rock, _ = librosa.load('audio/jim2012Chords/Guitar_Only/a/a3.wav')
-
-    # Create chromagrams
-    audio1_stft = librosa.feature.chroma_stft(y=rb)
-    for key in audio1_stft:
-        print(mean(key))
-    print("beal")
-    """
-
-    # Look into this later
-    # audio1_cqt = librosa.feature.chroma_cqt(y=rb, sr=sb)
-    # audio1_sens = librosa.feature.chroma_cens(y=rb, sr=sb)
-    # rap_chroma = librosa.feature.chroma_stft(rap, sr=sr)
-    # rock_chroma = librosa.feature.chroma_stft(rock, sr=sr)
 
 if __name__ == '__main__':
     main()
