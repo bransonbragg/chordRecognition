@@ -78,18 +78,6 @@ def main():
         if predictions[i] == y_test[i]:
             num_cor += 1
     print("Test accuracy is: " + str(num_cor / len(predictions)))
-    
-
-    """
-    #with open('trainBran.csv', 'w') as f:
-    #    for key in master_dict.keys():
-    #        f.write("%s, %s\n" % (key, master_dict[key]))
-    print("debug")
-    
-    Pass the inputs in R^12 as x
-    Pass the labels in R as y
-    ^^ Format to match prior GDA implementation ^^
-    """
 
 if __name__ == '__main__':
     main()
