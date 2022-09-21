@@ -19,7 +19,7 @@ def add_intercept(x):
 
 
 def load_dataset(csv_path, label_col='y', add_intercept=False):
-    """Load dataset from a CSV file.
+    """Load dataset from a CSV file
 
     Args:
          csv_path: Path to CSV file containing dataset.
