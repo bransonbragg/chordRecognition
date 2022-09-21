@@ -7,7 +7,6 @@ import gda12
 import csv
 import util
 from gda12 import GDA
-from knn_chords import KNN
 import math
 
 def main():
@@ -62,24 +61,6 @@ def main():
 
     train_path = 'trainDat.csv'
     test_path = 'testDat.csv'
-    """
-    x_train, y_train = util.load_dataset(train_path, add_intercept=False)  # good
-    x_test, y_test = util.load_dataset(test_path, add_intercept=False)
-    clf = KNN()
-    predictions = clf.predict(x_train, x_train, y_train)
-    num_cor = 0
-    for i in range(len(predictions)):
-        if predictions[i] == y_train[i]:
-            num_cor += 1
-    print("Train accuracy is: " + str(num_cor / len(predictions)))
-
-    predictions = clf.predict(x_test, x_train, y_train)
-    num_cor = 0
-    for i in range(len(predictions)):
-        if predictions[i] == y_test[i]:
-            num_cor += 1
-    print("Test accuracy is: " + str(num_cor / len(predictions)))
-    """
     """
     clf = GDA()
     phi, sigma, mu_1, mu_2, mu_3, mu_4, mu_5, mu_6, mu_7, mu_8, mu_9, mu_10 = clf.fit(x_train, y_train)
