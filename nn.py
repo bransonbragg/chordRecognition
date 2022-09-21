@@ -197,7 +197,7 @@ def main(plot=True):
     train_data = (train_data - mean) / std
     dev_data = (dev_data - mean) / std
 
-    test_data, test_labels = read_data('./testBranAvg.csv', './labels_testBranAvg.csv')
+    test_data, test_labels = read_data('./testDat.csv', './labels_testDat.csv')
     test_labels = one_hot_labels(test_labels)
     test_data = (test_data - mean) / std
 
