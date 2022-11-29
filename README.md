@@ -1,4 +1,5 @@
 # Chord Recognition with Machine Learning Techniques
+## Multiclass Gaussian Discriminant Analysis and 2-layer Neural Net implementation
 
 ## Files
 **chords.py** -- create training and test set, driver for GDA/NN   
